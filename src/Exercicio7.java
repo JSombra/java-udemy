@@ -45,33 +45,40 @@ public class Exercicio7 {
         } else {
             duracaoTotal = 24 - inicio + fim;
         }
-        System.out.println("O jogo durou" + duracaoTotal);
+        System.out.println("O jogo durou " + duracaoTotal);
 
         System.out.println("");
         System.out.println("---------Exercicio 8--------");
         System.out.println("");
 
+        int cod, qtde;
+        double price;
+        cod = sc.nextInt();
+        qtde = sc.nextInt();
 
-
-        sc.close();
-    }
-    public void ExercicioResolvido(){
-        Scanner sc = new Scanner(System.in);
-        int n, A, B, inicio, fim, duracaoTotal;
-        System.out.print("Digite um número: ");
-        n = sc.nextInt();
-
-        if (n < 0) {
-            System.out.println("NEGATIVO");
-        } else {
-            System.out.println("POSITIVO");
+        switch (cod){
+            case 1:
+                price = qtde * 4.0;
+                System.out.println("Total: " + price);
+                break;
+            case 2:
+                price = qtde * 4.50;
+                System.out.println("Total: " + price);
+                break;
+            case 3:
+                price = qtde * 5.0;
+                System.out.println("Total: " + price);
+                break;
+            case 4:
+                price = qtde * 2.0;
+                System.out.println("Total: " + price);
+                break;
+            case 5:
+                price = qtde * 1.50;
+                System.out.println("Total: " + price);
+                break;
         }
 
-        if (n % 2 == 0) {
-            System.out.println("PAR");
-        } else {
-            System.out.println("ÍMPAR");
-        }
         sc.close();
     }
 }
