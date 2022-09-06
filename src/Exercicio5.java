@@ -20,5 +20,6 @@ public class Exercicio5 {
         total = preco1 * qte1 + preco2 * qte2;
 
         System.out.printf("VALOR A PAGAR: R$ %.2f%n", total);
+        sc.close();
     }
 }

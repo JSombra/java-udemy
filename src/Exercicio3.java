@@ -12,5 +12,6 @@ public class Exercicio3 {
 
         produto = (A * B - C * D);
         System.out.println("Diferença = " + produto);
+        sc.close();
     }
 }
