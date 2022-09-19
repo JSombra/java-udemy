@@ -19,5 +19,6 @@ public class Exercicio9 {
         } else {
             System.out.println("Intervalo: [75, 100]");
         }
+        sc.close();
     }
 }
