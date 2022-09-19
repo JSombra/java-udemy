@@ -1,3 +1,5 @@
+package exercicios.resolvidos;
+
 import java.util.Scanner;
 
 public class Exercicio7 {
@@ -56,27 +58,27 @@ public class Exercicio7 {
         cod = sc.nextInt();
         qtde = sc.nextInt();
 
-        switch (cod){
-            case 1:
+        switch (cod) {
+            case 1 -> {
                 price = qtde * 4.0;
                 System.out.println("Total: " + price);
-                break;
-            case 2:
+            }
+            case 2 -> {
                 price = qtde * 4.50;
                 System.out.println("Total: " + price);
-                break;
-            case 3:
+            }
+            case 3 -> {
                 price = qtde * 5.0;
                 System.out.println("Total: " + price);
-                break;
-            case 4:
+            }
+            case 4 -> {
                 price = qtde * 2.0;
                 System.out.println("Total: " + price);
-                break;
-            case 5:
+            }
+            case 5 -> {
                 price = qtde * 1.50;
                 System.out.println("Total: " + price);
-                break;
+            }
         }
 
         sc.close();

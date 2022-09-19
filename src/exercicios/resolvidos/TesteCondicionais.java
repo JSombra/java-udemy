@@ -1,3 +1,5 @@
+package exercicios.resolvidos;
+
 import java.util.Scanner;
 
 public class TesteCondicionais {
@@ -10,7 +12,7 @@ public class TesteCondicionais {
 
         if (horas < 12) {
             System.out.println("Bom dia");
-        } else if (horas >= 12 && horas < 18) {
+        } else if (horas < 18) {
             System.out.println("Boa tarde");
         } else {
             System.out.println("Boa noite");

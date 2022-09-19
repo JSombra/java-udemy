@@ -1,3 +1,5 @@
+package exercicios.resolvidos;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -9,10 +11,10 @@ public class Exercicio14 {
         int x = sc.nextInt();
 
         for(int i = 0; i < x; i++){
-            Double n1 = sc.nextDouble();
-            Double n2 = sc.nextDouble();
-            Double n3 = sc.nextDouble();
-            Double mp = (2 * n1 + 3 * n2 + 5 * n3) / 10;
+            double n1 = sc.nextDouble();
+            double n2 = sc.nextDouble();
+            double n3 = sc.nextDouble();
+            double mp = (2 * n1 + 3 * n2 + 5 * n3) / 10;
             
             System.out.printf("%.1f%n", mp);
         }
