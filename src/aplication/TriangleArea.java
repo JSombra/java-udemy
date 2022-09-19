@@ -5,7 +5,7 @@ import entities.Triangle;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class AreaTriangulo {
+public class TriangleArea {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
@@ -26,8 +26,8 @@ public class AreaTriangulo {
         double areaX = x.calculateArea();
         double areaY = y.calculateArea();
 
-        x.showResults(areaX);
-        y.showResults(areaY);
+        Triangle.showResults(areaX);
+        Triangle.showResults(areaY);
 
         compareArea(areaX, areaY);
 
