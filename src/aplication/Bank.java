@@ -14,7 +14,7 @@ public class Bank {
         int accountNumber = sc.nextInt();
 
         System.out.print("Enter account holder: ");
-        sc.nextLine();//linha corrigida conforme aula
+        sc.nextLine();//linha corrigida conforme aula. Necessário para consumir a quebra de linha derivada do nextInt
         String accountHolder = sc.nextLine();
 
         System.out.print("Is there initial deposit: (y/n): ");
@@ -28,17 +28,20 @@ public class Bank {
             account = new Account(accountNumber, accountHolder);//linha corrigida conforme aula
         }
         System.out.println();
-        System.out.printf("Account data: %s%n", account);
+        System.out.println("Account data: ");
+        System.out.println(account);
         System.out.println();
         System.out.print("Enter a deposit value: ");
         account.deposit(sc.nextDouble());
-        System.out.printf("Updated data: %s%n", account);
+        System.out.println("Updated data: ");
+        System.out.println(account);
 
         System.out.println();
         System.out.print("Enter a withdraw value: ");
         account.withdraw(sc.nextDouble());
 
-        System.out.printf("Updated data: %s%n", account);
+        System.out.println("Updated data: ");
+        System.out.println(account);
         System.out.println();
         sc.close();
     }
