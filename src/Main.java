@@ -9,6 +9,7 @@ public class Main {
         n2 = sc.nextInt();
         n3 = sc.nextInt();
         showResults(max(n1, n2, n3));
+        sc.close();
     }
     public static int max(int a, int b, int c){
         int aux;
