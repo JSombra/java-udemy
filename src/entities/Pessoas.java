@@ -11,6 +11,11 @@ public class Pessoas {
         
     }
 
+    public Pessoas(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
     public Pessoas(String name, int age, double height) {
         this.name = name;
         this.age = age;

@@ -1,4 +1,4 @@
-package exercicios;
+package exercicios.resolvidos;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -17,7 +17,7 @@ public class VectEx5 {
             System.out.print("Digite um número: ");
             vect[i] = sc.nextDouble();
         }
-        double maior = 0, maiorPosicao = 0;
+        double maior = Integer.MIN_VALUE, maiorPosicao = 0;
         for(int i = 0; i < vect.length; i++){
             if(vect[i] > maior){
                 maior = vect[i];
