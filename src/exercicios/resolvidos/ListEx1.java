@@ -1,4 +1,4 @@
-package exercicios;
+package exercicios.resolvidos;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,13 +13,14 @@ public class ListEx1 {
         Scanner sc = new Scanner(System.in);
 
         List<Employee> list = new ArrayList<>();
+
         System.out.print("How many employess will be registred: ");
         int n = sc.nextInt();
 
         for(int i = 1; i <= n; i++){
             System.out.printf("Employee #%d : %n", i);
             System.out.print("ID: ");
-            int id = sc.nextInt();
+            Integer id = sc.nextInt(); // ajustado para Wrapper Class
 
             while(hasId(list, id)){
                 System.out.println("Id Already taken. Try again: ");
@@ -27,12 +28,12 @@ public class ListEx1 {
             }
             System.out.print("Name: ");
             sc.nextLine();
-            String name = sc.nextLine();
+            String name = sc.nextLine(); // ajustado para Wrapper Class
             System.out.print("Salary: ");
-            double salary = sc.nextDouble();
+            Double salary = sc.nextDouble();// ajustado para Wrapper Class
             
             list.add(new Employee(id, name, salary));
-            
+
             System.out.println();
         }
 
