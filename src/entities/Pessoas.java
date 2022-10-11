@@ -1,7 +1,5 @@
 package entities;
 
-import java.util.jar.Attributes.Name;
-
 public class Pessoas {
     private String name;
     private int age;

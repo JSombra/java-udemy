@@ -1,29 +1,56 @@
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Three Numbers: ");
-        int n1, n2, n3;
-        n1 = sc.nextInt();
-        n2 = sc.nextInt();
-        n3 = sc.nextInt();
-        showResults(max(n1, n2, n3));
-        sc.close();
-    }
-    public static int max(int a, int b, int c){
-        int aux;
-        if (a > b && a > c){
-            aux = a;
-        } else if (b > c) {
-            aux = b;
-        } else {
-            aux = c;
-        }
-        return aux;
+        start();
     }
 
-    public static void showResults(int value){
-        System.out.println("Higher = " + value);
+    public static void start(){
+
+        List<String> list = new ArrayList<>();
+
+        list.add("Jefferson");
+        list.add("Raquel");
+        list.add("Stephany");
+        list.add("Neuma");
+        list.add("Marcus");
+        list.add("Jaca");
+        list.add("Posição 10");
+        list.add("Posição 11");
+        list.add("Posição 12");
+
+
+        list.add(2, "Maria");
+
+        System.out.println(list.size());
+
+        for(String i: list){
+            System.out.println(i);
+        }
+        System.out.println("--------Lista Original--------");
+
+        list.removeIf(x -> x.charAt(0) == 'M');
+        
+        for(String i: list){
+            System.out.println(i);
+        }
+        System.out.println("---------------");
+
+        System.out.println("Index Off Raquel: " + list.indexOf("Raquel"));
+
+        System.out.println("---------------------");
+
+        List<String> result = list.stream().filter(x -> x.charAt(0) == 'J').collect(Collectors.toList());
+
+        for(String i: result){
+            System.out.println(i);
+        }
+        System.out.println("---------------------");
+
+        String name = list.stream().filter(x -> x.charAt(0) == 'R').findFirst().orElse(null);
+        System.out.println(name);
     }
+
 }
