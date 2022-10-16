@@ -1,3 +1,4 @@
+package exercicios.resolvidos;
 import java.util.Scanner;
 
 public class Matrizes {
