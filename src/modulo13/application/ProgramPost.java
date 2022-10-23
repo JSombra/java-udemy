@@ -12,6 +12,7 @@ public class ProgramPost {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Scanner sc = new Scanner(System.in);
 
+
         Post post1 = new Post(sdf.parse("21/06/2018 13:05:44"),
                 "Traveling to New Zealand",
                 "I'm going to visit this wonderful country!",
