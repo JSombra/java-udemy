@@ -1,6 +1,6 @@
 package modulo14.entities;
 
-public class SavingsAccount extends Account{
+public final class SavingsAccount extends Account{
     private Double interestRate;
 
     public SavingsAccount() {
@@ -22,5 +22,11 @@ public class SavingsAccount extends Account{
 
     public void updateBalance(){
         balance += balance * interestRate;
+    }
+
+    //Palavra chave final. Serve para indicar que um método ou classe não pode ser herdado ou sobreposto.
+    @Override
+    public final void withdraw(Double amount) {
+        balance -= amount;
     }
 }

@@ -25,4 +25,10 @@ public class BusinessAccount extends Account{
             balance += amount - 10.0;
         }
     }
+    //Anotação @Override indica ao compilador que esse método é um método reescrito da superclasse que herda.
+    @Override
+    public void withdraw(Double amount) {
+        super.withdraw(amount);
+        balance -= 2.0;
+    }
 }

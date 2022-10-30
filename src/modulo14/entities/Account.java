@@ -32,7 +32,7 @@ public class Account {
 
     public void withdraw(Double amount){
         if (balance - amount >= 0){
-            balance -= amount;
+            balance -= amount + 5;
         } else {
             System.out.println("No balance avaliable");
         }
