@@ -21,34 +21,25 @@ public class ProgramEmployee {
             System.out.printf("Employee #%d data%n", i);
             System.out.print("Outsourced (y/n): ");
             char res = sc.next().charAt(0);
+            System.out.print("Name: ");
+            sc.nextLine();
+            String name = sc.nextLine();
+            System.out.print("Hours: ");
+            int hours = sc.nextInt();
+            System.out.print("Value per hour: ");
+            double valuePerHour = sc.nextDouble();
             if (res == 'y'){
-                System.out.print("Name: ");
-                sc.nextLine();
-                String name = sc.nextLine();
-                System.out.print("Hours: ");
-                int hours = sc.nextInt();
-                System.out.print("Value per hour: ");
-                double valuePerHour = sc.nextDouble();
                 System.out.print("Aditional charger: ");
                 double additionalCharger = sc.nextDouble();
-                Employee employee = new OutsourceEmployee(name, hours, valuePerHour, additionalCharger);
-                listEmployees.add(employee);
+                listEmployees.add(new OutsourceEmployee(name, hours, valuePerHour, additionalCharger));
             } else {
-                System.out.print("Name: ");
-                sc.nextLine();
-                String name = sc.nextLine();
-                System.out.print("Hours: ");
-                int hours = sc.nextInt();
-                System.out.print("Value per hour: ");
-                double valuePerHour = sc.nextDouble();
-                Employee employee = new Employee(name, hours, valuePerHour);
-                listEmployees.add(employee);
+                listEmployees.add(new Employee(name, hours, valuePerHour));
             }
         }
-
+        System.out.println();
         System.out.println("PAYMENTS: ");
-        for (int i = 0; i < n; i++ ){
-            System.out.println(listEmployees.get(i).getName() + " - $ " + listEmployees.get(i).payment());
+        for (Employee emp: listEmployees){
+            System.out.println(emp.getName() + " - $ " + String.format("%.2f", emp.payment()));
         }
 
         sc.close();
