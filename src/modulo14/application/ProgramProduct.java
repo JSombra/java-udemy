@@ -43,6 +43,7 @@ public class ProgramProduct {
             }
         }
 
+
         System.out.println();
         System.out.println("PRICE TAGS: ");
         for (Product product: list){
