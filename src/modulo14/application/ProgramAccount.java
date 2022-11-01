@@ -9,7 +9,6 @@ import modulo14.entities.enums.TypeAccount;
 
 public class ProgramAccount {
     public static void main(String[] args) {
-        Account acc = new Account(1001, "Jefferson", 2000.0);
         BusinessAccount bacc = new BusinessAccount(1002, "Raquel", 0.0, 500.0);
 
         //UPCASTING
@@ -36,7 +35,5 @@ public class ProgramAccount {
             acc5.withdraw(100.0);
             System.out.println(acc5.getBalance());
         }
-        acc.withdraw(100.0);
-        System.out.println(acc.getBalance());
     }
 }
