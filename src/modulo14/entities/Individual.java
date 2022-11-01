@@ -24,14 +24,10 @@ public class Individual extends Taxpayer{
     public double calcTax() {
         double totalTax = 0;
         if (getAnualIncome() < 20000.0){
-            totalTax = getAnualIncome() * 0.15;
-        } else if (getAnualIncome() > 20000.0){
-            totalTax = getAnualIncome() * 0.25;
+            return getAnualIncome() * 0.15 - healthExpenses * 0.5;
+        } else {
+            return getAnualIncome() * 0.25 - healthExpenses * 0.5;
         }
-        if (getHealthExpenses() > 0){
-            totalTax -= getHealthExpenses() * 0.5;
-        }
-        return totalTax;
     }
 
     public String toString() {

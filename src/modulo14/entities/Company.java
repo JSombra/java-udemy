@@ -22,13 +22,11 @@ public class Company extends Taxpayer{
 
     @Override
     public double calcTax() {
-        double totalTax = 0;
         if (getTotalEmployees() > 10){
-            totalTax = getAnualIncome() * 0.14;
+            return getAnualIncome() * 0.14;
         } else {
-            totalTax = getAnualIncome() * 0.16;
+            return getAnualIncome() * 0.16;
         }
-        return totalTax;
     }
 
     public String toString() {
