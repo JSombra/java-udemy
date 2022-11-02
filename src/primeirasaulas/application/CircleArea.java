@@ -1,6 +1,6 @@
-package application;
+package primeirasaulas.application;
 
-import util.Calculator;
+import primeirasaulas.util.Calculator;
 
 import java.util.Locale;
 import java.util.Scanner;

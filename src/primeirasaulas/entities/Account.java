@@ -1,4 +1,4 @@
-package entities;
+package primeirasaulas.entities;
 
 public class Account {
     private int numberAccount;

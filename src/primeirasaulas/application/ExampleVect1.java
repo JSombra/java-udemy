@@ -1,4 +1,4 @@
-package application;
+package primeirasaulas.application;
 
 import java.util.Locale;
 import java.util.Scanner;

@@ -1,6 +1,6 @@
-package application;
+package primeirasaulas.application;
 
-import entities.Employee;
+import primeirasaulas.entities.Employee;
 
 import java.util.Locale;
 import java.util.Scanner;

@@ -3,7 +3,7 @@ package exercicios.resolvidos;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Pessoas;
+import primeirasaulas.entities.Pessoas;
 
 public class VectEx3ClassResolution {
     public static void main(String[] args) {

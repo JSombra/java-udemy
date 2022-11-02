@@ -40,19 +40,17 @@ public class ProgramTaxpayer {
                 list.add(new Company(name, anualIncome, numberEmployees));
             }
         }
-        System.out.println();
-        System.out.println("TAXES PAID: ");
 
+        System.out.println();
         for (Taxpayer taxpayer: list){
             System.out.println(taxpayer.toString());
         }
 
+        //Um for para cada coisa, um para somar apenas, e outro para apenas imprimir os resultados. Cógido mais legível
         double sum = 0;
-
         for (Taxpayer taxpayer: list){
             sum += taxpayer.calcTax();
         }
-
         System.out.println();
         System.out.printf("TOTAL TAXES: %.2f%n", sum);
 

@@ -1,4 +1,4 @@
-package entities;
+package primeirasaulas.entities;
 
 public class Employee {
     public int id;

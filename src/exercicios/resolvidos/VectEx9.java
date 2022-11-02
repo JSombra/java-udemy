@@ -2,7 +2,7 @@ package exercicios.resolvidos;
 
 import java.util.Scanner;
 
-import entities.Pessoas;
+import primeirasaulas.entities.Pessoas;
 
 public class VectEx9 {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package application;
+package primeirasaulas.application;
 
-import util.CurrencyConverter;
+import primeirasaulas.util.CurrencyConverter;
 
 import java.util.Locale;
 import java.util.Scanner;

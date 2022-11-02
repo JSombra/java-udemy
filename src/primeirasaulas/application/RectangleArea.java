@@ -1,6 +1,6 @@
-package application;
+package primeirasaulas.application;
 
-import entities.Rectangle;
+import primeirasaulas.entities.Rectangle;
 
 import java.util.Locale;
 import java.util.Scanner;

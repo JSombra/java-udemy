@@ -3,7 +3,7 @@ package exercicios.resolvidos;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.StudentEx;
+import primeirasaulas.entities.StudentEx;
 
 public class VectEx10{
     public static void main(String[] args) {

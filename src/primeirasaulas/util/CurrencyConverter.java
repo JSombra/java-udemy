@@ -1,4 +1,4 @@
-package util;
+package primeirasaulas.util;
 
 public class CurrencyConverter {
     public static double IOF = 0.06;
