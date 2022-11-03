@@ -46,13 +46,17 @@ public class Account {
         balance += amount;
     }
 
-    public void whithdraw(Double amount) throws WithdrawException{
-        if (amount > withdrawLimit){
+    public void whithdraw(Double amount) throws WithdrawException {
+        validateWithdraw(amount);
+        balance -= amount;
+    }
+
+    public void validateWithdraw(Double amount) throws WithdrawException {
+        if (amount > getWithdrawLimit()) {
             throw new WithdrawException("Withdraw error: The amount exceeds withdraw limit");
-        } else if (amount > balance) {
+        }
+        if (amount > getBalance()) {
             throw new WithdrawException("Withdraw error: Not enough balance");
-        } else {
-            balance -= amount;
         }
     }
 }
